@@ -2230,7 +2230,6 @@ hr {
  }
 .top-download-item{
   margin-bottom: 10px; 
-
 }
 
 .download-buttons {
@@ -2241,8 +2240,9 @@ hr {
 }
 
 .download-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  gap: 10px; /* Adjust spacing between icon and column */
   justify-content: center;
   background-color: black;
   padding: 12px 20px;
@@ -2250,10 +2250,26 @@ hr {
   text-decoration: none;
   transition: all 0.3s ease;
   width: 250px;
-  height: 80px; /* Fixed height */
+  height: 100px;
   overflow: hidden;
 }
-
+.download-icon{
+  width: 24;
+  height: 24;
+}
+.download-column{
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.download-column p{
+  color: white;
+}
+.download-subtext{}
+.download-text{
+  font-size: 24px;
+  font-weight: bold;
+}
 .download-button img {
   width: 280px; /* Adjusted size */
   height: 60px; /* Fixed height to fit inside button */
@@ -2411,4 +2427,29 @@ hr {
 }
 .bottom-pad{
   padding-bottom: 50px;
+}
+
+.pill-button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  background-color: #000000; /* Change to your preferred color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px; /* Makes it pill-shaped */
+  font-size: 20px;
+  cursor: pointer;
+  transition:  all 0.3s ease;
+}
+
+.pill-button:hover {
+  background-color: #050e14; /* Darker shade on hover */
+  padding: 20px 22px;
+  font-size: 24px;
+}
+
+.icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
 }
