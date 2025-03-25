@@ -2254,12 +2254,12 @@ hr {
   overflow: hidden;
 }
 .download-icon{
-  width: 24;
-  height: 24;
+  width: 20;
+  height: 20;
 }
 .download-column{
   display: flex;
-  gap: 4px;
+  gap: 0px;
   flex-direction: column;
 }
 .download-column p{
@@ -2267,7 +2267,7 @@ hr {
 }
 .download-subtext{}
 .download-text{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 .download-button img {
@@ -2450,6 +2450,6 @@ hr {
 }
 
 .icon {
-  width: 20px; /* Adjust size as needed */
-  height: 20px;
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
 }
